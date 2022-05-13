@@ -20,25 +20,25 @@ denoised_prices = denoise(
 
 suppose `y` is the time series vector, `x` is the denoised vector and `v` is an unknown noise vector
 
-![eq1](http://www.sciweavers.org/upload/Tex2Img_1630619351/render.png)
+![eq1](https://github.com/ebrahimpichka/LSM-denoise/blob/master/images/eq1.png)
 
 to find `x` we need to solve the following minimization problem using least squares method:
 
-![eq2](http://www.sciweavers.org/upload/Tex2Img_1630619879/render.png)
+![eq2](https://github.com/ebrahimpichka/LSM-denoise/blob/master/images/eq2.png)
 
 this problem minimizes the noise factor `v` with the penalty of the difference between two consequetive `x` values become minimized.
 
 the penalty term could be written as:
 
-![eq3](http://www.sciweavers.org/upload/Tex2Img_1630620305/render.png)
+![eq3](https://github.com/ebrahimpichka/LSM-denoise/blob/master/images/eq3.png)
 
 where D is an (n-1)x(n) matrix like:
 
-![eq4](http://www.sciweavers.org/upload/Tex2Img_1630620788/render.png)
+![eq4](https://github.com/ebrahimpichka/LSM-denoise/blob/master/images/eq4.png)
 
-and finally the main minimization problem could be re-written as"
+and finally the main minimization problem could be re-written as:
 
-![eq5](http://www.sciweavers.org/upload/Tex2Img_1630621183/render.png)
+![eq5](https://github.com/ebrahimpichka/LSM-denoise/blob/master/images/eq6.png)
 
 
 ## Results:
